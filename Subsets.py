@@ -3,6 +3,8 @@
 def getAllSubsets(l,size=0,subsets=[],element_index=dict()) :
 
     if size==len(l) :
+
+        subsets.append([])
         return subsets
 
     if size==0 :
@@ -33,5 +35,5 @@ def getAllSubsets(l,size=0,subsets=[],element_index=dict()) :
     return getAllSubsets(l,size+1,subsets,element_index)
 
 
-l=[1,2,3,4,5,6]
-print len(getAllSubsets(l))
+l=[1,2,2]
+print (getAllSubsets(l))
